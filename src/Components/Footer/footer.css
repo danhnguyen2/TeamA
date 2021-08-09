@@ -15,10 +15,29 @@ padding:20px;
 .logo-wrapper{
 
 }
+.logo-wrapper img {
+    width: 100%;
+}  
 .terms-use{
 padding:10px;
 }
 .copyright{
     padding:10px;
 font-style: italic;
+}
+@media (max-width: 648px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        }
+    .logo-wrapper {
+            width: 100%;
+        }
+    .logo-wrapper img {
+        width: 100%;
+    }  
+
 }
