@@ -1,0 +1,29 @@
+.home-wrapper {
+    display: flex;
+    background: #242526;
+    font-size: 24px;
+    color: white;
+}
+.left-section {
+    display: flex;
+}
+
+.description {
+}
+.description p {
+    padding-bottom: 20px;
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+.image-wrapper {
+}
+.img-wrap {
+}
+.img-wrap img {
+}
+.image-description {
+    text-align: center;
+    padding: 10px;
+}
