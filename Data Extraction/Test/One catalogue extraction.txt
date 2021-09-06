@@ -1,0 +1,66 @@
+import os
+import pdfplumber
+os.chdir('C:\\Users\\Danh\\Desktop\\CSE3PRA & CSE3PRB')
+
+#Looking at Page 110
+#with pdfplumber.open(r'RVP.pdf') as pdf:
+#	page = pdf.pages[110]
+#	text = page.extract_text()
+
+#Need to take the current page + the next page
+#text = ''
+#with pdfplumber.open(r'RVP.pdf') as pdf:
+#	for page_number in range (110,112):
+#		page = pdf.pages[page_number]
+#		text += page.extract_text() + '\n'
+		
+
+#Takes the current page + the next page with page number + chapter title removed		
+text = ''
+with pdfplumber.open(r'RVP.pdf') as pdf:
+	for page_number in range (110,112):
+		page = pdf.pages[page_number]
+		pText = page.extract_text()
+		pText = pText.split('\n')
+		del pText[0]
+		pText = '\n'.join(pText)
+		text += pText + '\n'	
+		
+		
+		
+
+
+#Taking Reference Number 92
+r_Num = 92
+for row in text.split('\n'):
+	if row.startswith('*' + str(r_Num)):
+		print(text[text.index('*' + str(r_Num)):text.index('*' + str(r_Num +1))])
+
+
+#pdf.pages[109]
+#Trying to take the non-askerisks
+#r_Num = 87
+for row in text.split('\n'):
+	if row.startswith('*' + str(r_Num)):
+		print(text[text.index('*' + str(r_Num)):text.index(str(r_Num +1))])
+#Issue is that there are multiple “88” strings
+#Need to take 88 at the start of the row
+
+
+
+
+#while loops
+#r_Num = 87
+#p_sub = []
+#while row not startwith (* 87+1) or (87+1), continue appending to the p_sub
+
+#regex - pattern recognition
+
+#Chapter names in a dictioanry list then remove page numbers
+
+#NLP
+#Machine learning
+#Transformers
+#IBM Watson
+
+
