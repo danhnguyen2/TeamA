@@ -1,0 +1,92 @@
+.contactus{
+    margin: 0 auto;
+    /* background-color: #1e1e1e; */
+    background-color: black;
+    padding: 20px;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contactus-main{
+    margin: 0 auto;
+}
+
+.contactus-main p{
+    text-align: center;
+}
+.contactus-main h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+.contactus p,h1{
+    color: white;
+}
+
+.three-inputs{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.three-inputs input{
+    width: 300px;
+}
+
+.input-element{
+    border: 2px solid #F0AA11;
+    padding: 5px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.text-area-container textarea{
+    width: 610px;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.submit-container{
+    text-align: center;
+    margin-top: 15px;
+}
+.submit-container button{
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+    background-color: #F0AA11;
+    border: none;
+}
+
+.thank-you-message{
+    text-align: center;
+    color: white;
+}
+
+.thank-you-message-skeleton{
+    text-align: center;
+    width: 300px;
+}
+.thank-you-message-skeleton h1{
+    width: 300px;
+    margin:0 auto
+}
+.thank-you-message-skeleton p{
+    width: 700px;
+    margin:0 auto
+}
+
+
+@media only screen   
+and (max-width: 648px)  
+ 
+{ 
+    .submit-container button{
+       width: auto;
+    }
+}
