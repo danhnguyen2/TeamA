@@ -1,0 +1,14 @@
+type Vase @model {
+  id: ID!
+  painter: String
+  shape: String
+  entry: Int
+  location: String!
+  v_num: Int
+  notes: String
+  height: Float
+  diameter: Float
+  plate: String
+  reference: String
+  description: String
+}
